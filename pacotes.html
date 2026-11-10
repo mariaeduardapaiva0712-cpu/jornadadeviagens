@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Viagens</title>
+    <!-- Configuração do css externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons: biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid bg-primary text-white text-center p-4">
+        <h1>Jornada Viagens</h1>
+        <p>Pacotes de viagem!✈️🌍</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes de Viagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Informações</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Formulários
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+                            <li><a class="dropdown-item" href="exemplo_form.html">Exemplo</a></li>
+                            <li><a class="dropdown-item" href="form_endereco.html">Endereço</a></li>
+                            <li><a class="dropdown-item" href="orcamento.html">Orçamento</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-5">
+        <section aria-labelledby="titulo-pacotes">
+            <div class="text-center mb-4">
+                <h2 id="titulo-pacotes">Conheça nossos pacotes</h2>
+                <p class="lead">Escolha seu próximo destino e comece a planejar sua viagem.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar1.jpg" class="card-img-top"
+                            alt="Vista panorâmica de uma cidade iluminada durante a noite.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Cidade iluminada à noite</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 1.299,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar2.jpg" class="card-img-top"
+                            alt="Paisagem urbana ao entardecer, com edifícios e luzes da cidade.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Cidade ao entardecer</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 1.499,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar3.jpg" class="card-img-top"
+                            alt="Rua de centro histórico cercada por edifícios de arquitetura clássica.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Centro histórico</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 1.199,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar4.jpg" class="card-img-top"
+                            alt="Avenida movimentada com viaduto elevado e edifícios ao redor.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Avenida urbana</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 999,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar5.jpg" class="card-img-top"
+                            alt="Vista de uma cidade moderna com prédios altos e canal entre as avenidas.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Cidade moderna</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 1.699,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <img src="img/lugar6.jpg" class="card-img-top"
+                            alt="Rua histórica à noite, iluminada por postes e cercada por árvores e construções.">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title h5">Rua histórica à noite</h2>
+                            <p class="card-text">Pacote a partir de <strong>R$ 1.099,00</strong></p>
+                            <!-- BUTTON GROUP: botões colados que formam um conjunto -->
+                            <div class="btn-group mt-auto" role="group" aria-label="Ações do pacote">
+                                <a href="orcamento.html" class="btn btn-primary">Tenho interesse</a>
+                                <button type="button" class="btn btn-outline-primary btn-favoritar" aria-label="Favoritar pacote"
+                                    data-bs-toggle="tooltip" data-bs-title="Salvar nos favoritos">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="outros">
+            <table class="table table-striped tabela-acessivel">
+                <caption>Outros destinos</caption>
+                <colgroup>
+                    <col class="col-destino">
+                    <col class="col-preco">
+                    <col class="col-duracao">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Preço
+                            <!-- POPOVER: balão com título e texto que abre no clique -->
+                            <button type="button" class="btn btn-link p-0 align-baseline" aria-label="Como o preço é calculado"
+                                data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top"
+                                data-bs-title="Como calculamos"
+                                data-bs-content="Valor por pessoa, com hotel e café da manhã. Passagem aérea não incluída.">
+                                <i class="bi bi-info-circle"></i>
+                            </button>
+                        </th>
+                        <th scope="col">Duração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Belford Roxo</th>
+                        <td>R$ 1.299,00</td>
+                        <td>5 dias</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vilar dos Teles</th>
+                        <td>R$ 1.499,00</td>
+                        <td>7 dias</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">São João de Meriti</th>
+                        <td>R$ 1.199,00</td>
+                        <td>4 dias</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- COLLAPSE: o botão abre/fecha o bloco que tem o id indicado em data-bs-target -->
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#condicoes" aria-expanded="false" aria-controls="condicoes">
+                <i class="bi bi-credit-card"></i> Ver condições de pagamento
+            </button>
+            <div class="collapse mt-3" id="condicoes">
+                <div class="card card-body">
+                    <ul class="mb-0">
+                        <li>Pix com 5% de desconto.</li>
+                        <li>Cartão de crédito em até 10x sem juros.</li>
+                        <li>Reserva garantida com 20% de entrada.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <!-- ACCORDION: perguntas frequentes -->
+        <section id="faq" class="my-5">
+            <h2 class="text-center mb-4">Perguntas frequentes</h2>
+            <div class="accordion" id="accordionFaq">
+
+                <!-- Item 1: começa ABERTO (show no bloco, sem collapsed no botão) -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            O que está incluso nos pacotes?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Hospedagem com café da manhã e traslado do aeroporto ao hotel.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: começa FECHADO (collapsed no botão, sem show no bloco) -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Posso cancelar minha viagem?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Sim. Cancelamentos com até 30 dias de antecedência têm reembolso integral.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            Preciso de passaporte?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Apenas para destinos internacionais. No Brasil, basta um documento com foto.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Botão que ABRE o modal: data-bs-target aponta para o id do modal -->
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalFeedback">
+                    <i class="bi bi-chat-heart"></i> Avalie nosso atendimento
+                </button>
+            </div>
+            <!-- Aqui vai aparecer o agradecimento (Etapa 14) -->
+            <div id="area-feedback" class="mt-3"></div>
+        </section>
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-3">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pacotes de Viagens</li>
+            
+        </ol>
+    </nav>
+    </main>
+    <!-- MODAL: janela que abre por cima da página -->
+    <div class="modal fade" id="modalFeedback" tabindex="-1" role="dialog" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloModal">Avalie nosso atendimento</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <form id="form-feedback">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="fb-nome" class="form-label">Seu nome</label>
+                            <input type="text" id="fb-nome" class="form-control" required>
+                        </div>
+                        <p class="form-label mb-1">Sua nota</p>
+                        <!-- BUTTON GROUP com radios: só uma nota pode ser escolhida -->
+                        <div class="btn-group mb-3" role="group" aria-label="Nota de 1 a 5">
+                            <input type="radio" class="btn-check" name="nota" id="nota1" value="1" required>
+                            <label class="btn btn-outline-warning" for="nota1">1</label>
+                            <input type="radio" class="btn-check" name="nota" id="nota2" value="2">
+                            <label class="btn btn-outline-warning" for="nota2">2</label>
+                            <input type="radio" class="btn-check" name="nota" id="nota3" value="3">
+                            <label class="btn btn-outline-warning" for="nota3">3</label>
+                            <input type="radio" class="btn-check" name="nota" id="nota4" value="4">
+                            <label class="btn btn-outline-warning" for="nota4">4</label>
+                            <input type="radio" class="btn-check" name="nota" id="nota5" value="5">
+                            <label class="btn btn-outline-warning" for="nota5">5</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fb-comentario" class="form-label">Comentário (opcional)</label>
+                            <textarea id="fb-comentario" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Enviar avaliação</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer> <!-- rodapé da página -->
+        <div class="footer-container">
+            <div class="footer-copy">
+                <p>&copy; 2026 Jornada Viagens. Todos os direitos reservados</p>
+            </div>
+            <!-- criar uma ancora de link -->
+            <a name="contato"></a>
+            <address class="footer-contato">
+                <h2>Contato</h2>
+                <p>Email: contato@jornadaviagens.com.br
+                <p>Tel/WhatsApp: (21)91234-1234
+            </address>
+            <nav class="footer-redes" aria-label="Redes Sociais">
+                <a href="https://pt-br.facebook.com/" target="_blank" aria-label="Facebook"
+                    data-bs-toggle="tooltip" data-bs-title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"
+                    data-bs-toggle="tooltip" data-bs-title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/" target="_blank" aria-label="X"
+                    data-bs-toggle="tooltip" data-bs-title="X (antigo Twitter)"><i class="bi bi-twitter-x"></i></a>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    
+    <!-- Liga tooltips, popovers, favoritos e o modal -->
+    <script src="js/componentes.js"></script>
+</body>
+
+</html>
